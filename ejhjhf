@@ -1,0 +1,2640 @@
+<html><head>
+
+
+
+
+
+
+
+
+
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<!-- noindex	Do not show this page in search results and do not show a "Cached" link in search results.
+	 nofollow	Do not follow the links on this page
+	 none		Equivalent to noindex, nofollow -->
+<meta name="ROBOTS" content="NONE">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>eKYC Form</title>
+
+<link rel="Shortcut Icon" type="image/ico" href="https://sarathi.parivahan.gov.in/cdn-sarathi/images/nhai.ico?v=1.0">
+
+<link href="https://sarathi.parivahan.gov.in/cdn-sarathi/css/bootstrap/bootstrap-theme.min.css?v=1.0" type="text/css" rel="stylesheet">
+<link href="https://sarathi.parivahan.gov.in/cdn-sarathi/css/bootstrap/bootstrap.min.css?v=1.0" type="text/css" rel="stylesheet">
+<link href="https://sarathi.parivahan.gov.in/cdn-sarathi/css/jquery/jquery-ui.min.css?v=1.0" rel="stylesheet" type="text/css">
+<link href="https://sarathi.parivahan.gov.in/cdn-sarathi/css/sarathi/custom.css?v=1.0" type="text/css" rel="stylesheet">
+<link href="https://sarathi.parivahan.gov.in/cdn-sarathi/css/sarathi/sarathi_parivahan.css?v=1.0" rel="stylesheet" type="text/css">
+<link href="https://sarathi.parivahan.gov.in/cdn-sarathi/css/sarathi/sarathi_parivahan_layout.css?v=1.0" type="text/css" rel="stylesheet">
+<link href="https://sarathi.parivahan.gov.in/cdn-sarathi/css/sarathi/sow4.css?v=1.0" type="text/css" rel="stylesheet">
+<link href="https://sarathi.parivahan.gov.in/cdn-sarathi/css/fonts/font-awesome.min.css?v=1.0" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="https://sarathi.parivahan.gov.in/cdn-sarathi/js/jquery/jquery.min.js?v=1.0"></script>
+<script type="text/javascript" src="https://sarathi.parivahan.gov.in/cdn-sarathi/js/jquery/jquery-ui.min.js?v=1.0"></script>
+<script type="text/javascript" src="https://sarathi.parivahan.gov.in/cdn-sarathi/js/bootstrap/bootstrap.min.js?v=1.0"></script>
+
+<script type="text/javascript" src="https://sarathi.parivahan.gov.in/cdn-sarathi/js/modal.js?v=1.0"></script>
+
+
+<script>
+function loadScript(src, callback) {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = src;
+  script.id = "scripts";
+  script.onload = callback;
+  document.head.appendChild(script);
+  $('#scripts').remove();
+}
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof jQuery === "undefined") {
+	console.log("jQuery is not defined");
+    loadScript("./js/scripts.js?v=0.1", function () {
+    	console.log("jQuery defined.");
+    });
+  } else {
+    console.log("jQuery already loaded--" + jQuery.fn.jquery);
+    $(function () {
+    	console.log("jQuery ready");
+    });
+  }
+});
+</script>
+
+<script type="text/javascript">
+	var is_s5redirection = false;
+	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		var msViewportStyle = document.createElement("style")
+		msViewportStyle.appendChild(document
+				.createTextNode("@-ms-viewport{width:auto!important}"))
+		document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+	}
+	
+	 function changeCaptcha(){
+			$("#capimg").attr("src", "jsp/common/captchaimage.jsp?"+(new Date().getTime()));
+			$("#commonCaptcha").val('');
+	}
+	 
+	$(document).ready(function() {
+		//cdac localisation line
+		//$("select.NALOC > option").addClass("NALOC");
+		//end
+		
+// 		loadScript('./js/scripts.js?v=0.1');
+		var windowsize = $(window).width();
+		 if (windowsize > 1600) {  //windowsize > 767
+			$('#bdheight').css("min-height", 400);
+		}
+
+	});
+
+	var width = null;
+	$(document).ready(function() {
+		$('#list').click(function() {
+			//  alert("inside function ready");
+			//alert($('#tableId tr:eq(1) td').length);
+			//	alert("TR Element By Id : "+$('#tr_tableId').length);
+		});
+		
+		/* var timeinter = setInterval(function() {
+			width = $('#tableId tr:eq(1) td').width();
+			if (width > 0) {
+				//  alert("width=="+width);
+				for (var i = 0; i < $('#tableId tr:eq(1) td').length; i++) {
+					// alert("$('#tableId tr:eq(1) td:eq('+i+')').width()====="+$('#tableId tr:eq(1) td:eq('+i+')').width());
+					$('#tableId tr:eq(0) th:eq(' + i + ')').width(
+							$('#tableId tr:eq(1) td:eq(' + i + ')').width());
+				}
+				//	  clearInterval(timeinter);
+			}
+		}, 0); */
+	});
+
+</script>
+
+<style type="text/css">* {<br>		-webkit-user-select: text !important;<br>		-moz-user-select: text !important;<br>		-ms-user-select: text !important;<br>		 user-select: text !important;<br>	}</style><style type="text/css">* {<br>        -webkit-user-select: text !important;<br>        -moz-user-select: text !important;<br>        -ms-user-select: text !important;<br>         user-select: text !important;<br>    }</style></head>
+<body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+<!-- <div id="Sarathi_Lang_ID">Language:</div> -->
+
+
+	<div class="main">
+		<div class="container padding0px">
+			<div class="header">
+				
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style>
+.change-statenew
+{
+  /*   margin: 0px 4px; */
+}
+.change-statenew a
+{
+    background-color: rgb(60, 118, 61);
+    padding: 5px 6px;
+    border-radius: 5px;
+    letter-spacing: 0.7px;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+}
+.csc_agency_app_ {
+	text-decoration: none;
+	color: #ffffff;
+	border-top: 1px solid #ffffff;
+	padding: 0.7rem;
+	background: #1e7c9a;
+	white-space: nowrap;
+}
+ .date_time
+{
+text-align: center;
+} 
+.sarathinew_logo
+{
+width: 100px;
+height: 100px;
+margin-top: -10px;
+}
+.sarathi_parivahantxt
+{
+text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+    font-size: 18px;
+    font-family: auto;
+    padding: 17px 0px 0px 0px;
+    margin-left: -32px;
+}
+.ministryofroad_text p
+{
+    color: #ffffff;
+    margin: 0px 0px 0px 0px !important;
+    line-height: 23px;
+    font-family: auto;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+.ministryofroad_text
+{
+    margin: 10px 0px 0px 0px !important;
+}
+.india_new_emblem img
+{
+padding: 0px 0px 0px 15px;
+}
+.sarathiheader_page
+{
+background:#1CA6EF; 
+clear:both; 
+padding:5px 0px;
+color:ffffff !important;
+}
+.sarathiheader_page .logo-main > img
+{
+padding: 0 0 0 3%;
+}
+
+.sarathiheader_page .login_page > li
+{
+margin: 0 0 0 28%;
+}
+
+.font3 {
+	color: #0008ffd9;
+    font-weight: 550;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-family: Trebuchet MS;
+/*     padding-right: 10% !important; */
+	margin-bottom: -4px;
+}
+.input-sm, .form-group-sm .form-control {
+    height: 34px;
+    border: 2px solid #ffffff;
+    background: #ecedee;
+    border-radius: 21px;    
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-right: -58px !important;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: -58px !important;
+}
+.header-date
+{
+    color:#1c8fd1;
+}
+.col-md-offset-1 {
+    margin-left: 6.333333%;
+}
+.red
+{
+	color:#ffffff !important;
+}
+
+@media screen and (max-width: 600px) {
+	.font3size {font-size:1.6em;
+	
+	}
+	
+.header {
+   
+    background: #15a7ef !important;
+}
+.sarathiheader_page .logo-main > img
+{
+padding: 0 0 0 0%;
+}
+.sarathinew_logo
+{
+margin-top: 0px;
+}
+.date_time
+{
+text-align: center;
+}
+}
+@media (min-width: 551px) and (max-width: 991px) {
+	.font3size {font-size:1.6em;}
+	.navbar-inverse .navbar-nav > li > a {
+    color: #081e5b !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+.sarathiheader_page .logo-main > img
+{
+padding: 0 0 0 0%;
+}
+.nav > li > a {
+    padding: 6px;
+}	
+.header {
+    
+    background: #15a7ef !important;
+}
+.form-control {
+    margin:  0 0 8px !important;
+}
+.date_time
+{
+text-align: center;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.font3size {font-size:1.7em;}
+}
+@media screen and (min-width: 1200px) {
+	.font3size {font-size:1.7em;}
+}
+.blink {
+  animation: blinker 1s step-start infinite;
+  background-color: #f99a07;
+}
+
+@keyframes blinker {
+  30% {
+    opacity: 0;
+  }
+}
+</style>
+
+
+
+<div class="sarathiheader_page">
+	<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-12 mb_textcenter">
+					<div class="col-md-7 col-sm-7 col-xs-12">
+			 <div class="ministry_nic_logo padding0px mb_textcenter">
+				<img src="https://sarathi.parivahan.gov.in/sarathiservice/images/logo/ministry-nic-logo.png" alt="Ministrylogo">
+			</div> 			
+			</div>
+			<div class="col-md-5 col-sm-5 col-xs-12" style="text-align: center;">
+			 <div class="ministry_nic_logo padding0px mb_textcenter">
+				<img src="https://sarathi.parivahan.gov.in/sarathiservice/images/logo/parivahan-logo.png" alt="Sarathilogo">
+			</div>			
+			</div>
+		</div>
+
+		<div class="col-md-4 col-sm-4 col-xs-12 date_time mb_textcenter" style="">
+			<ul class="list-unstyled sarathidate" style="padding-top: 8px; text-decoration:none;">		        
+				<li>
+					<div class="sarathidate_time padding0px" style="color:ffffff; font-size:12px; ">
+						<label class="margin0px bold" style="color: #000;">DATE:</label> <span id="currdate" class="NALOC" style="color:#ffffff !important;">18-02-2026</span>&nbsp;&nbsp;&nbsp;
+						<label style="color: #000; letter-spacing: 0.5px;">TIME:</label> <span id="time" class="" style="color:#ffffff;">11:16:23 PM</span>
+					</div>
+				</li>
+			    <li>
+			    <div style="margin-top: 0.7rem; text-align: center !important; color: #000; border-radius: 5px !important;">
+			     <span id="Sarathi_Lang_ID" style="display: none;"><span style="color: #000;font-family:system-ui;letter-spacing: 0.8px;font-weight: 600;">Language:</span></span> 
+			  
+						<!-----------Change State------------>
+			    <span class="change-statenew">
+
+<a href="stateSelection.do" style="">Change State</a>
+ 
+</span>
+						</div>
+			    </li> 
+				<li style="margin-top: 0.7rem;">
+					
+				</li>
+			</ul>	
+		</div>
+		
+			<div class="col-md-2 col-sm-2 col-sm-12 col-xs-12 mb_textcenter" style="text-align: center;">
+				<div class="sarathi_login">
+					<ul class="list-unstyled" style="padding: 6px 0 0 0px;">
+					<li> <span class="font_increase">
+                    <a href="#" id="decfont" style="color: black;">A<sup>-</sup></a>
+                </span>
+                <span class="font_increase">
+                    <a href="#" id="resetfont" style="color: black;">A</a>
+                </span>
+                <span class="font_increase">
+                    <a href="#" id="incfont" style="color: black;">A<sup>+</sup></a>
+                </span></li>
+			        	<li style="margin: 10px 0px 0px 0px;"><a id="login" href="sarathilogin.do" style="background-color: #3c763d;padding: 5px 16px; border-radius: 5px;color:#ffffff !important; letter-spacing: 0.9px; font-size: 13px;text-decoration: none; display: none;">Login</a></li>
+			          <!-- 	<li style="margin-top: 0.7rem;"><div id="Sarathi_Lang_ID">Language:</div></li> -->
+			          	<li style="margin-top: 0.7rem;">
+			        	  	
+			          	</li>
+			        </ul>			        	
+		        </div>		        
+	        </div>
+	    
+	</div>
+</div>
+
+
+	
+	
+		<div class="col-md-12 padding0px" style="text-align: center;">
+			<span id="assStateLbl_id" class="font3 font3size" style="cursor: pointer;">
+				TRANSPORT DEPARTMENT, GOVERNMENT OF HIMACHAL PRADESH
+			</span>
+		</div>
+	
+	
+	<!--<div class="col-md-12 padding0px" style="text-align: center;">
+		<span class="font3 font3size" style="font-size:1.2em;color:#f99a07">
+			<a class="blink" target="_blank" href="https://sarathi.parivahan.gov.in/sarathicms/api/v1/get-resource/NEVNYm02QUp4OG1VRGFNc01LWm0vZkZjYTZTQkMwOXpxendzL1NjZ1d0RHlxVjZRZUNTRDAyUDB6ZVNzb1YweVVpTUdGaUhlc083b2JaWWduQjdYMXc9PQ==">Click here</a> for the Advisory from the MoRTH regarding the validity of Licences during the disruption of SARATHI services
+		</span>
+	</div> -->
+	
+	
+	
+	<form id="csc_agency_post_sub">
+		<input type="hidden" name="UniqueId" id="UniqueId" autocomplete="off">
+		<input type="hidden" name="param" id="param" autocomplete="off">
+		<input type="hidden" name="TYPE" id="TYPE" autocomplete="off">
+	</form>
+
+<script type="text/javascript">
+$("#assStateLbl_id").click(function() {
+	$('#assStateLbl_popup').modal('show');
+});
+
+$("#state_inassociation").click(function() {
+	$('#assStateLbl_popup').modal('show');
+});
+
+// $("#csc_agency_app_status").click(function() {
+function backtoMahaonlineFun(){
+	var agId='null';
+	var linkLabel='null';
+	var returnUrl='null';
+	console.log("agId :"+agId+": linkLabel:"+linkLabel+": returnUrl:"+returnUrl);
+	backToAgencyPortal();
+	}
+// });
+
+function backToAgencyPortal(){
+	$.ajax({
+        url: "checkApplStatus.do",
+        type: "post",
+        success: function(d) {console.log(d);
+	        if(d.method === 'get') {
+	        	var url;
+	        	if(d.ret_url.indexOf("TYPE=RES") != -1) {
+	        		window.location.href = d.ret_url;
+	        	} else if(d.ret_url.indexOf("TYPE=NO") != -1) {
+	        		if(confirm("No application had submitted with given token. Do you want to proceed?")) {
+	        			url = d.ret_url.replace("TYPE=NO", "TYPE=N");
+	        			window.location.href = url;
+	        		}
+	        	} else if(d.ret_url.indexOf("TYPE=N") != -1) {
+	        		if(confirm("For this application all flows are not completed. Do you want to proceed?")) {
+	        			window.location.href = d.ret_url;
+	        		}
+	        	} else if(d.ret_url.indexOf("#") != -1) {
+	        		
+	        	} else {
+	        		window.location.href = d.ret_url;
+	        	}    	
+	        } else if(d.method === 'post') {
+	        	if(d.id == 'UPeSathi') {
+	        		$("#UniqueId").val(d.UniqueId);
+		        	$("#param").val(d.param);
+		        	$("#TYPE").val(d.TYPE);
+		        	$("#csc_agency_post_sub").attr("action", d.ret_url);
+		        	
+	        		if(d.TYPE == "RES") {
+	        			if(confirm("No application had submitted with given token. Do you want to proceed?")) {
+	        				$("#csc_agency_post_sub").submit();
+	        			}
+		        	} else if(d.TYPE == "NO") {
+		        		if(confirm("For this application all flows are not completed. Do you want to proceed?")) {
+		        			$("#TYPE").val('N');
+		        			$("#csc_agency_post_sub").submit();
+		        		}
+		        	} else if(d.TYPE == "N") {
+		        		$("#csc_agency_post_sub").submit();
+		        	}
+				}
+	        }
+        }
+    });
+}
+
+/* $("#csc_agency_app_status").click(function() {
+	$.ajax({
+        url: "checkApplStatus.do",
+        type: "post",
+        success: function(d) {//alert(d);
+        //window.location.href = d;
+        	 if(d.indexOf("TYPE=RES") != -1) {
+        		window.location.href = d;
+        		/* if(confirm("For this application all the flows are completed.")) {
+        			
+        		} */
+        	 /*} else if(d.indexOf("TYPE=NO") != -1) {
+        		if(confirm("No application had submitted with given token. Do you want to proceed?")) {
+        			d = d.replace("TYPE=NO", "TYPE=N");
+        			window.location.href = d;
+        		}
+        	} else if(d.indexOf("TYPE=N") != -1) {
+        		if(confirm("For this application all flows are not completed. Do you want to proceed?")) {
+        			window.location.href = d;
+        		}
+        	} else if(d.indexOf("#") != -1) {
+        		//window.location.href = d;
+        	} else {
+        		window.location.href = d;
+        	}
+        }
+    });
+}); */
+</script>
+<script> 
+
+	
+	var dateStr=1764153288367
+
+	var serverTimeMillisGMT = Date.parse(new Date(dateStr).toUTCString());
+	var str="AM";
+	var count=0;
+	function msToTime(duration) {
+        var milliseconds = duration % 1000
+            , seconds = Math.floor((duration / 1000) % 60)
+            , minutes = Math.floor((duration / (60 * 1000)) % 60)+30
+            , hours = Math.floor((duration/(1000*60*60))%24)+5+parseInt(minutes>59 ? "1" :"0" );
+//         console.log("hours==> "+hours);
+       
+        if(hours>12){
+            str=hours==24 ? "AM" :"PM";
+        	hours= hours-12;
+        	
+        }
+        
+        if(minutes>59){
+        	minutes= minutes-60;
+        }
+        if(hours>12 && hours<25){
+        	hours=hours-12;
+        	
+        }
+        if(hours==12){
+        	str="PM";
+        }
+        	
+        hours = (hours < 10) ? "0" + hours : hours;
+        minutes = (minutes < 10)   ? "0" + minutes :  minutes ;
+        seconds = (seconds < 10)   ? "0" + seconds :  seconds ;
+        count=seconds;
+		var time=hours + ":" +  minutes + ":" + seconds;
+		
+        return time;
+    }
+    
+function noBack(){ 
+	window.history.forward(1);
+}
+var serverTime = "2025-11-26 16:04:48.367613";
+		var localTime = new Date();
+		var ser = new Date(serverTime);
+		var ti = localTime.toLocaleTimeString();
+		var serti = ser.toLocaleTimeString();
+		var myVar = setInterval(function() {
+			myTimer();
+		}, 1000);
+
+		var offset, diff;
+		var localMillisUTC = Date.parse(new Date(serverTime).toUTCString());
+		offset = serverTimeMillisGMT - localMillisUTC;
+		diff = localMillisUTC + offset;
+		var d = new Date(serverTime);//time;
+		var curr_date = d.getDate() < 10 ? "0" + d.getDate() : d.getDate();
+		var curr_month = d.getMonth() < 9 ? "0" +(d.getMonth() + 1) : parseInt(d.getMonth()) + 1; 
+		//var curr_month = parseInt(d.getMonth()) + 1;
+		var curr_year = d.getFullYear();
+		var colorArr = new Array();
+		colorArr.push("#FA026A");
+		colorArr.push("#9B02FA");
+		colorArr.push("#4402FA");
+		function myTimer() {
+			try {
+				document.getElementById("currdate").innerHTML = curr_date + "-"
+						+ curr_month + "-" + curr_year;
+				diff = diff + 1000;
+				document.getElementById("time").innerHTML = msToTime(diff)
+						+ " " + str;
+				var i = count % 3;
+				if (i == 0 || i == 1 || i == 2) {
+					var color = Math.floor(Math.random() * 16777215).toString(
+							16);
+					var marq = $("#marq");
+					marq.css('color', colorArr[i]);
+				}
+				
+			} catch (e) {
+			}
+		}
+
+		function brighten(color, percent) {
+			var r = parseInt(color.substr(1, 2), 16);
+			var g = parseInt(color.substr(3, 2), 16);
+			var b = parseInt(color.substr(5, 2), 16);
+
+			return '#' + Math.min(255, Math.floor(r * percent)).toString(16)
+					+ Math.min(255, Math.floor(g * percent)).toString(16)
+					+ Math.min(255, Math.floor(b * percent)).toString(16);
+		}
+	</script>
+	<!--------------------font-size (A, A-, A+)------------------- -->
+	<script> 
+	$('#incfont').click(function () {
+        curSize = parseInt($('body').css('font-size')) + 2;
+        if (curSize <= 24)
+            $('body').css('font-size', curSize);
+    });
+    $('#decfont').click(function () {
+        curSize = parseInt($('body').css('font-size')) - 2;
+
+        if (curSize >= 12)
+            $('body').css('font-size', curSize);
+    });
+    $('#resetfont').click(function () {
+        curSize = parseInt($('body').css('font-size'));
+        $('body').css('font-size', '14px');
+    });
+
+   $('.form-text').bind("cut copy paste", function(e) {
+      e.preventDefault();
+      alert("You cannot paste into this text field.");
+      $('.form-text').bind("contextmenu", function(e) {
+     e.preventDefault();
+  }); });
+
+ $(".faq li > *:not(h4)").hide();
+ $(".faq h4").click(function() {
+ $(this).siblings().slideToggle("slow");
+ });
+	</script>
+	
+
+
+
+			</div>
+			<div class="width100p">
+				
+			</div>
+			<div id="bdheight" class="content">
+				
+
+
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+		
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/dlcss/aedl.css">
+	<script src="js/modal.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/dlcss/dlSerSelection.css">
+	<script type="text/javascript">
+		var aedl="false";
+		var renewal="false";
+		var idp="false";
+		function setHidden(){
+			document.check.reset1.value="Exit";
+			/* document.check.submit(); */
+			return true;
+		}
+		function noBack() 
+  		{ 
+  	  		window.history.forward(); 
+  		}
+	</script>
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+		<input type="hidden" name="surrenderOriginalDlAtdispatch" value="false" id="surrenderOriginalDlAtdispatch" autocomplete="off">
+	
+	
+	
+	
+		<input type="hidden" name="capturePhoroAndSigMand" value="false" id="capturePhoroAndSigMand" autocomplete="off">
+	
+	
+	
+		<input type="hidden" name="dupDLSerMand" value="false" id="dupDLSerMand" autocomplete="off">
+	
+	
+	
+		<input type="hidden" name="surrOrgDL" value="false" id="surrOrgDL" autocomplete="off">
+	
+	
+	
+		<input type="hidden" name="preMatRenewal" value="true" id="preMatRenewal" autocomplete="off">
+	
+	
+	
+	
+		<input type="hidden" name="AEDLNotAllowd" value="false" id="AEDLNotAllowd" autocomplete="off">
+	
+	
+	<input type="hidden" name="COAEnable" value="true" id="COAEnable" autocomplete="off">
+	<script type="text/javascript">
+		//alert("IN COA Enable");
+	</script>
+	
+	
+	
+	
+		<input type="hidden" name="eKYCDLSerReq" value="false" id="eKYCDLSerReq" autocomplete="off">
+	
+	
+	<input type="hidden" name="AEDLADDED" value="true" id="AEDLADDED" autocomplete="off">
+	<script type="text/javascript">
+		//alert("IN AEDLADDED forsefully");
+	</script>
+	
+	
+	
+	<input type="hidden" name="COAMand" value="true" id="COAMand" autocomplete="off">
+	<script type="text/javascript">
+		//alert("IN COA Mandatory");
+	</script>
+	
+	
+	
+	
+		<input type="hidden" name="eKYCAllowApplnameModify" value="false" id="eKYCAllowApplnameModify" autocomplete="off">
+	
+	
+	
+		<input type="hidden" name="eKYCAllowDobModify" value="false" id="eKYCAllowDobModify" autocomplete="off">
+	
+	
+	
+		<input type="hidden" name="eKYCSelCONSer" value="false" id="eKYCSelCONSer" autocomplete="off">
+	
+	
+	
+		<input type="hidden" name="eKYCSelCODOBSer" value="false" id="eKYCSelCODOBSer" autocomplete="off">
+	
+	
+	
+	<script type="text/javascript">
+		//alert("IN LastSelBothRTOsareNotSame");
+	</script>
+	<input type="hidden" name="LastSelBothRTOsareNotSame" value="false" id="LastSelBothRTOsareNotSame" autocomplete="off">
+	
+	
+	<form id="trsaction" name="check" action="/sarathiservice/trsaction.do" method="post" enctype="multipart/form-data" class="form-horizontal" autocomplete="off">
+	<div class="panel panel-primary">
+		
+		
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				Application for Services on Driving Licence
+			<span class="pull-right">
+				
+				
+			</span>
+			</h3>
+		</div>
+		<div class="panel-body">
+		
+		
+		<div class="row col-md-12">
+			<div class="col-md-4">
+				<label id="trsaction_dl_dno" class="control-label lableinDlDet">Driving Licence Number : </label>
+				<b class="control-label">CG13 20022592067</b>
+			</div>
+			<div class="col-md-3">
+				<label id="trsaction_enve_dlname" class="control-label lableinDlDet">Name : </label>
+				<b class="control-label">JAYANT KUMAR YADAV</b>
+			</div>
+			<div class="col-md-5">
+			
+				<label id="trsaction_enve_selRTOName" class="control-label lableinDlDet">Selected RTO Name :</label>
+				<b class="control-label">RLA,RAMPUR</b>
+			</div>
+		</div>
+		
+		<div class="row col-md-12">
+			<br>
+		</div>
+		<!-- Added by Venkatesh Y on 13-02-2016 -->		
+		<div class="col-md-12" id="AEDLLin" style="display: none;">
+			<fieldset class="scheduler-border col-md-12">
+				<legend class="scheduler-border">LL Details</legend> 
+					<div class="col-md-8">
+						
+						
+ 							
+ 							
+ 							<div class="col-md-3 control-label labeled" align="right">
+								<label class="red">*</label>
+								<label>State</label>
+							</div>
+							<div class="col-md-2" align="left">
+								<select name="stateCodeDLTr" id="stateCodeDLTr" class="boldLabel form-control" onchange="enableConfirmDL()">
+    <option value="-1">--Select--</option>
+    <option value="Himachal Pradesh">Himachal Pradesh</option>
+</select>
+
+
+							</div>
+							<div class="col-md-2 control-label labeled" align="right">
+								<label class="red">*</label>
+								<label>RTO Office</label>
+							</div>
+							<div class="col-md-3" align="left">
+								<select name="rtoCodeDLTr" id="rtoCodeDLTr" class="boldLabel form-control" onchange="enableConfirmDL()">
+    <option value="-1">--Select--</option>
+    <option value="AMB -- HP19 ">AMB -- HP19 </option>
+    <option value="ANNI -- HP35 ">ANNI -- HP35 </option>
+    <option value="ARKI -- HP11 ">ARKI -- HP11 </option>
+    <option value="BAIJNATH -- HP53 ">BAIJNATH -- HP53 </option>
+    <option value="BALH -- HP82 ">BALH -- HP82 </option>
+    <option value="BALICHOWKI  -- HP87A">BALICHOWKI  -- HP87A</option>
+    <option value="BANGANA -- HP78 ">BANGANA -- HP78 </option>
+    <option value="BANJAR -- HP49 ">BANJAR -- HP49 </option>
+    <option value="BARSAR -- HP21 ">BARSAR -- HP21 </option>
+    <option value="BHARMOUR -- HP46 ">BHARMOUR -- HP46 </option>
+    <option value="BHORANJ -- HP74 ">BHORANJ -- HP74 </option>
+    <option value="BILASPUR -- HP69 ">BILASPUR -- HP69 </option>
+    <option value="BILASPUR SADAR -- HP24 ">BILASPUR SADAR -- HP24 </option>
+    <option value="CHAMBA (RLA) -- HP48 ">CHAMBA (RLA) -- HP48 </option>
+    <option value="CHAMBA (RTO) -- HP73 ">CHAMBA (RTO) -- HP73 </option>
+    <option value="CHAUPAL -- HP08 ">CHAUPAL -- HP08 </option>
+    <option value="CHOWARI -- HP57 ">CHOWARI -- HP57 </option>
+    <option value="CHURAH -- HP44 ">CHURAH -- HP44 </option>
+    <option value="DALHOUSIE -- HP47 ">DALHOUSIE -- HP47 </option>
+    <option value="DEHRA -- HP36 ">DEHRA -- HP36 </option>
+    <option value="DHARAMPUR -- HP86 ">DHARAMPUR -- HP86 </option>
+    <option value="DHARAMSALA -- HP39 ">DHARAMSALA -- HP39 </option>
+    <option value="DHARAMSHALA(RTO) -- HP68 ">DHARAMSHALA(RTO) -- HP68 </option>
+    <option value="DHEERA -- HP96 ">DHEERA -- HP96 </option>
+    <option value="DODRA KAWAR -- HP77 ">DODRA KAWAR -- HP77 </option>
+    <option value="FATEHPUR -- HP88 ">FATEHPUR -- HP88 </option>
+    <option value="GHUMARWIN -- HP23 ">GHUMARWIN -- HP23 </option>
+    <option value="GOHAR -- HP32 ">GOHAR -- HP32 </option>
+    <option value="HAMIRPUR  -- HP67 ">HAMIRPUR  -- HP67 </option>
+    <option value="HAMIRPUR (RLA) -- HP22 ">HAMIRPUR (RLA) -- HP22 </option>
+    <option value="HAROLI -- HP80 ">HAROLI -- HP80 </option>
+    <option value="INDORA -- HP97 ">INDORA -- HP97 </option>
+    <option value="JAISINGHPUR -- HP56 ">JAISINGHPUR -- HP56 </option>
+    <option value="JAWALAMUKHI -- HP83 ">JAWALAMUKHI -- HP83 </option>
+    <option value="JAWALI -- HP54 ">JAWALI -- HP54 </option>
+    <option value="JHANDUTTA -- HP89 ">JHANDUTTA -- HP89 </option>
+    <option value="JOGINDERNAGAR -- HP29 ">JOGINDERNAGAR -- HP29 </option>
+    <option value="KALPA -- HP25 ">KALPA -- HP25 </option>
+    <option value="KANDAGHAT -- HP13 ">KANDAGHAT -- HP13 </option>
+    <option value="KANGRA (RLA) -- HP40 ">KANGRA (RLA) -- HP40 </option>
+    <option value="KARSOG -- HP30 ">KARSOG -- HP30 </option>
+    <option value="KASAULI -- HP98 ">KASAULI -- HP98 </option>
+    <option value="KAZA -- HP41 ">KAZA -- HP41 </option>
+    <option value="KEYLONG -- HP42 ">KEYLONG -- HP42 </option>
+    <option value="KOTLI -- HP33A">KOTLI -- HP33A</option>
+    <option value="KULLU (RLA) -- HP34 ">KULLU (RLA) -- HP34 </option>
+    <option value="KULLU (RTO) -- HP66 ">KULLU (RTO) -- HP66 </option>
+    <option value="KUMARSAIN -- HP95 ">KUMARSAIN -- HP95 </option>
+    <option value="MANALI -- HP58 ">MANALI -- HP58 </option>
+    <option value="MANDI (RTO) -- HP65 ">MANDI (RTO) -- HP65 </option>
+    <option value="MANDI SADAR -- HP33 ">MANDI SADAR -- HP33 </option>
+    <option value="NADUAN -- HP55 ">NADUAN -- HP55 </option>
+    <option value="NAGROTA BAGWAN -- HP94 ">NAGROTA BAGWAN -- HP94 </option>
+    <option value="NAHAN  -- HP18 ">NAHAN  -- HP18 </option>
+    <option value="NAHAN  -- HP71 ">NAHAN  -- HP71 </option>
+    <option value="NALAGARH  -- HP12 ">NALAGARH  -- HP12 </option>
+    <option value="NALAGARH (RTO) -- HP93 ">NALAGARH (RTO) -- HP93 </option>
+    <option value="NICHAR (BHABANAGAR) -- HP26 ">NICHAR (BHABANAGAR) -- HP26 </option>
+    <option value="NIRMAND -- HP35A">NIRMAND -- HP35A</option>
+    <option value="NURPUR -- HP38 ">NURPUR -- HP38 </option>
+    <option value="PADDHAR -- HP76 ">PADDHAR -- HP76 </option>
+    <option value="PALAMPUR -- HP37 ">PALAMPUR -- HP37 </option>
+    <option value="PANGI -- HP45 ">PANGI -- HP45 </option>
+    <option value="PARWANOO -- HP15 ">PARWANOO -- HP15 </option>
+    <option value="PONTA SAHIB -- HP17 ">PONTA SAHIB -- HP17 </option>
+    <option value="POOH -- HP27 ">POOH -- HP27 </option>
+    <option value="RAJGARH -- HP16 ">RAJGARH -- HP16 </option>
+    <option value="RAMPUR (RLA) -- HP06 ">RAMPUR (RLA) -- HP06 </option>
+    <option value="RAMPUR (RTO) -- HP92 ">RAMPUR (RTO) -- HP92 </option>
+    <option value="RLA ,BADDI -- HP12A">RLA ,BADDI -- HP12A</option>
+    <option value="RLA,GAGRET -- HP19A">RLA,GAGRET -- HP19A</option>
+    <option value="RLA JUBBAL -- HP75 ">RLA JUBBAL -- HP75 </option>
+    <option value="RLA,KAFFOTA -- HP85A">RLA,KAFFOTA -- HP85A</option>
+    <option value="RLA KOTKHAI -- HP99 ">RLA KOTKHAI -- HP99 </option>
+    <option value="RLA KUPVI -- HP08A">RLA KUPVI -- HP08A</option>
+    <option value="RLA, PACHHAD -- HP16A">RLA, PACHHAD -- HP16A</option>
+    <option value="ROHRU -- HP10 ">ROHRU -- HP10 </option>
+    <option value="SALOONI -- HP81 ">SALOONI -- HP81 </option>
+    <option value="SANGRAH -- HP79 ">SANGRAH -- HP79 </option>
+    <option value="SARKAGHAT -- HP28 ">SARKAGHAT -- HP28 </option>
+    <option value="SHAHPUR -- HP90 ">SHAHPUR -- HP90 </option>
+    <option value="SHILLAI -- HP85 ">SHILLAI -- HP85 </option>
+    <option value="SHIMLA (RTO) -- HP63 ">SHIMLA (RTO) -- HP63 </option>
+    <option value="SHIMLA-RURAL -- HP51 ">SHIMLA-RURAL -- HP51 </option>
+    <option value="SHIMLA-URBAN -- HP03 ">SHIMLA-URBAN -- HP03 </option>
+    <option value="SOLAN (RLA) -- HP14 ">SOLAN (RLA) -- HP14 </option>
+    <option value="SOLAN (RTO) -- HP64 ">SOLAN (RTO) -- HP64 </option>
+    <option value="SUJANPUR -- HP84 ">SUJANPUR -- HP84 </option>
+    <option value="SUNDERNAGAR -- HP31 ">SUNDERNAGAR -- HP31 </option>
+    <option value="SWARGHAT -- HP91 ">SWARGHAT -- HP91 </option>
+    <option value="THEOG -- HP09 ">THEOG -- HP09 </option>
+    <option value="THUNAG -- HP87 ">THUNAG -- HP87 </option>
+    <option value="UDAIPUR -- HP43 ">UDAIPUR -- HP43 </option>
+    <option value="UNA (RLA) -- HP20 ">UNA (RLA) -- HP20 </option>
+    <option value="UNA (RTO) -- HP72 ">UNA (RTO) -- HP72 </option>
+</select>
+
+
+							</div>
+ 						
+					</div>
+					<div class="col-md-4">
+						<div class="col-md-5 labeled control-label">
+								<span class="red bold">*</span>
+								<label>LL Number</label> :
+							</div>
+						<div class="col-md-7">
+							<input type="text" name="applEntLLNum" value="" id="applEntLLNum" class="form-control input-sm" autocomplete="off">
+						</div>						
+						
+					</div>
+			</fieldset>
+		</div>
+		
+		<div class="row col-md-12">
+			<br>
+		</div>
+		<!-- ****************END************** -->
+		
+		
+		
+		
+		
+	<br>
+	
+	
+	
+	<fieldset class="scheduler-border col-md-12">
+	<legend class="scheduler-border">Select the required DL Services : </legend>
+	
+	<div class="row">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-5 aligned bold">
+		
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="CHANGE OF DATE OF BIRTH IN DL" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="CHANGE OF DATE OF BIRTH IN DL" autocomplete="off">&nbsp;CHANGE OF DATE OF BIRTH IN DL<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="ISSUE INTERNATIONAL DRIVING PERMIT" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="ISSUE INTERNATIONAL DRIVING PERMIT" autocomplete="off">&nbsp;ISSUE INTERNATIONAL DRIVING PERMIT<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="REPLACEMENT OF DL" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="REPLACEMENT OF DL" autocomplete="off">&nbsp;REPLACEMENT OF DL<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="ENDORSEMENT TO DRIVE IN HILL REGION" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="ENDORSEMENT TO DRIVE IN HILL REGION" autocomplete="off">&nbsp;ENDORSEMENT TO DRIVE IN HILL REGION<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="DL EXTRACT" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="DL EXTRACT" autocomplete="off">&nbsp;DL EXTRACT<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="CHANGE OF NAME IN DL" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="CHANGE OF NAME IN DL" autocomplete="off">&nbsp;CHANGE OF NAME IN DL<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="SURRENDER OF COV(S)/PSV BADGE(S)" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="SURRENDER OF COV(S)/PSV BADGE(S)" autocomplete="off">&nbsp;SURRENDER OF COV(S)/PSV BADGE(S)<label></label>
+						
+					
+				</div>
+			
+		
+		
+		</div>
+		<div class="col-md-5 aligned bold">
+		
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="CHANGE OF ADDRESS IN DL" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="CHANGE OF ADDRESS IN DL" autocomplete="off">&nbsp;CHANGE OF ADDRESS IN DL<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="ADDITIONAL ENDORSEMENT TO DL" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="ADDITIONAL ENDORSEMENT TO DL" autocomplete="off">&nbsp;ADDITIONAL ENDORSEMENT TO DL<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="ISSUE OF DUPLICATE DL" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="ISSUE OF DUPLICATE DL" autocomplete="off">&nbsp;ISSUE OF DUPLICATE DL<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="AEDL FOR DEFENCE DL HOLDER" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="AEDL FOR DEFENCE DL HOLDER" autocomplete="off">&nbsp;AEDL FOR DEFENCE DL HOLDER<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="RENEWAL OF DL" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="RENEWAL OF DL" autocomplete="off">&nbsp;RENEWAL OF DL<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="ENDORSEMENT TO DRIVE HAZARDOUS MATERIAL" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="ENDORSEMENT TO DRIVE HAZARDOUS MATERIAL" autocomplete="off">&nbsp;ENDORSEMENT TO DRIVE HAZARDOUS MATERIAL<label></label>
+						
+					
+				</div>
+			
+				<div class="col-md-12 aligned bold">
+					
+					
+						
+						
+							<input type="checkbox" name="dlc" value="CHANGE OF PHOTO AND SIGNATURE IN DL" id="trsaction_dlc" autocomplete="off"><input type="hidden" id="__checkbox_trsaction_dlc" name="__checkbox_dlc" value="CHANGE OF PHOTO AND SIGNATURE IN DL" autocomplete="off">&nbsp;CHANGE OF PHOTO AND SIGNATURE IN DL<label></label>
+						
+					
+				</div>
+			
+			
+		
+		</div>
+		<div class="col-md-1">
+		</div>
+	</div>
+	<div class="col-md-12" align="center">
+		<input type="submit" value="Proceed" id="trsaction_enve_proceed" name="enve.proceed" class="btn top-space" onclick="return chkDLCheck();" autocomplete="off">
+
+		
+		<button type="submit" id="trsaction_dlservices_exit" name="dlservices.exit" value="Exit" class="btn top-space" onclick="return setHidden();">
+Exit
+</button>
+
+	</div>
+	</fieldset>
+	
+    <!-- Added by Venkatesh Y on 20-12-2022 issued with AEDL and Selected All Services -->
+	<script type="text/javascript">
+		var checksSize = document.getElementsByName("dlc").length;
+		for(var i=0; i<checksSize; i++){
+			document.getElementsByName("dlc")[i].disabled=false;
+			document.getElementsByName("dlc")[i].checked=false;
+		}
+	</script>	
+	
+	
+	
+	
+	<script type="text/javascript">
+		var checksSize = document.getElementsByName("dlc").length;
+		for(var i=0; i<checksSize; i++)
+		{
+			if(document.getElementById('preMatRenewal').value=="false" && document.getElementsByName("dlc")[i].value=="RENEWAL OF DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}
+			if(document.getElementById('COAEnable').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+				if(document.getElementById('COAMand').value=="true")
+					document.getElementsByName("dlc")[i].disabled="true";
+			}
+			if(document.getElementById('COAMand').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}
+			if(document.getElementById('surrenderOriginalDlAtdispatch').value=="true" && document.getElementById('surrOrgDL').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}
+			if(document.getElementById('capturePhoroAndSigMand').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF PHOTO AND SIGNATURE IN DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}
+			if(document.getElementById('dupDLSerMand').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}
+			if(document.getElementById('eKYCAllowApplnameModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}
+			if(document.getElementById('eKYCAllowDobModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}
+			if(document.getElementById('eKYCSelCONSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+			}
+			if(document.getElementById('eKYCSelCODOBSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+			}
+		}
+	</script>
+	<script type="text/javascript">
+	$("#clearChecks").click(function()
+	{
+		var checksSize = document.getElementsByName("dlc").length;
+		for(var i=0; i<checksSize; i++)
+		{
+			if(document.getElementById('preMatRenewal').value=="false" && document.getElementsByName("dlc")[i].value=="RENEWAL OF DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}
+			else
+			{
+				if(document.getElementsByName("dlc")[i].checked)
+				{
+					document.getElementsByName("dlc")[i].checked=false;
+				}
+			}
+			//if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+			if(document.getElementById('COAEnable').value=="false" && document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+			{
+				if(document.getElementById('COAMand').value=="true"){
+					document.getElementsByName("dlc")[i].checked=true;
+					document.getElementsByName("dlc")[i].disabled="true";
+				}
+			}
+			else
+			{
+				if(document.getElementsByName("dlc")[i].checked)
+				{
+					document.getElementsByName("dlc")[i].checked=false;
+				}
+			}
+			if(document.getElementById('surrenderOriginalDlAtdispatch').value=="true" && document.getElementById('surrOrgDL').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL"){
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}else{
+				if(document.getElementsByName("dlc")[i].checked){
+					document.getElementsByName("dlc")[i].checked=false;
+				}
+			}
+			if(document.getElementById('capturePhoroAndSigMand').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF PHOTO AND SIGNATURE IN DL"){
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}else{
+				if(document.getElementsByName("dlc")[i].checked){
+					document.getElementsByName("dlc")[i].checked=false;
+				}
+			}
+			if(document.getElementById('dupDLSerMand').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL"){
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}else{
+				if(document.getElementsByName("dlc")[i].checked){
+					document.getElementsByName("dlc")[i].checked=false;
+				}
+			}
+			if(document.getElementById('eKYCAllowApplnameModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL"){
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}else{
+				if(document.getElementsByName("dlc")[i].checked){
+					document.getElementsByName("dlc")[i].checked=false;
+				}
+			}
+			
+			if(document.getElementById('eKYCAllowDobModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL"){
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+			}else{
+				if(document.getElementsByName("dlc")[i].checked){
+					document.getElementsByName("dlc")[i].checked=false;
+				}
+			}
+			if(document.getElementById('eKYCSelCONSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+			}else{
+				if(document.getElementsByName("dlc")[i].checked){
+					document.getElementsByName("dlc")[i].checked=false;
+				}
+			}
+			if(document.getElementById('eKYCSelCODOBSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+			}else{
+				if(document.getElementsByName("dlc")[i].checked){
+					document.getElementsByName("dlc")[i].checked=false;
+				}
+			}
+			
+		}
+	});
+	</script>
+	<div class="col-md-12"><br></div>
+	<!-- Commented on 01.11.2014 as directed by B V Reddy -->
+	<div id="showaedl" align="left" style="display: none;">
+	
+	
+		<div class="col-md-12" align="left">
+			<p align="left"><b>*AEDL service will be provided only when valid Learner Licence is available</b></p>
+		</div>
+	
+	<!-- Commented on 01.11.2014 as directed by B V Reddy -->
+	
+	</div>
+	
+	
+		<div class="col-md-12" id="showidp" align="left" style="display: none;">
+		<p><b>*&nbsp;ISSUE INTERNATIONAL DRIVING PERMIT service will be provided only when DL backlog is approved</b></p>
+		<!-- Commented on 01.11.2014 as directed by B V Reddy -->
+		
+		</div>
+	
+	
+	<div class="col-md-12" id="showrenewal" align="left" style="display: none;">
+	
+	<p><b>*&nbsp;RENEWAL OF DL service will be provided only when DL is Expired or is about to expire in 365 days.</b></p>
+	<!-- Commented on 01.11.2014 as directed by B V Reddy -->
+	
+	</div>
+	
+	
+	
+	
+		
+		
+	
+	<!-- Venkatesh Changes for JH -->
+	
+	
+	<script type="text/javascript">
+	var dlcsize=document.getElementsByName("dlc").length;
+	for(var i=0; i<dlcsize; i++)
+	{
+		if(document.getElementsByName("dlc")[i].value=="ADDITIONAL ENDORSEMENT TO DL")
+		{
+			aedl="true";
+			document.getElementById("showaedl").style.display="none";
+		}
+		if(document.getElementsByName("dlc")[i].value=="RENEWAL OF DL")
+		{
+			renewal="true";
+			document.getElementById("showrenewal").style.display="none";
+		}
+		if(document.getElementsByName("dlc")[i].value=="ISSUE INTERNATIONAL DRIVING PERMIT")
+		{
+			idp="true";
+			document.getElementById("showidp").style.display="none";
+		}
+	}
+
+	if(aedl=="false")
+	{
+		document.getElementById("showaedl").style.display="";
+	}
+	if(renewal=="false")
+	{
+		document.getElementById("showrenewal").style.display="";
+	}
+	if(idp=="false")
+	{
+		document.getElementById("showidp").style.display="";
+	}
+	</script>
+	
+	
+	
+	<script type="text/javascript">
+	function chkDLCheck(){
+		var dlsize=document.getElementsByName("dlc").length;
+		var check=0;
+		for(var i=0; i<dlsize; i++)
+		{
+			//Added by Venkatesh Y on 13-02-2016
+			//alert(document.getElementsByName("dlc")[i].value);
+			//alert(document.getElementById('AEDLADDED').value);
+			//document.getElementById('AEDLLin').style.display = "";
+			//if(document.getElementById('AEDLADDED').value=="true" && document.getElementsByName("dlc")[i].value=="ADDITIONAL ENDORSEMENT TO DL" && (document.check.applEntLLNum.value==null ||  document.check.applEntLLNum.value==" "))
+			if(document.getElementById('AEDLADDED').value=="true" && document.getElementsByName("dlc")[i].value=="ADDITIONAL ENDORSEMENT TO DL")	
+			{
+				//alert("ADDITIONAL ENDORSEMENT TO DL");
+				if(document.getElementsByName("dlc")[i].checked){
+					//alert("AEDL is Select");
+					
+					var state = document.check.stateCodeDLTr.value;
+					if(state=="-1" || state==null)
+					{
+				    	//document.envform.stateCodeDLTr.style.borderColor="red";
+				    	MessageHandler('UC96-E08');
+			            var v=document.getElementById('s4msg').value;
+						alert(v);
+				    	//alert('Please select a State');
+				    	return false;
+				    }
+					
+					var rto = document.check.rtoCodeDLTr.value;
+					if(rto=="-1" || rto.length==0)
+				    {
+				    	//document.envform.rtoCodeDLTr.style.borderColor="red";
+				    	MessageHandler('UC96-E09');
+			            var v=document.getElementById('s4msg').value;
+						alert(v);
+				    	//alert('please select a RTO');
+				    	return false;
+				    }
+					if(document.check.applEntLLNum.value==null || document.check.applEntLLNum.value==" "){
+						alert("Please Enter LL Number");	
+						return false;
+					}
+					return true;
+				}
+			}
+			/* else{
+				alert("As per our records you do not have any valid LL’s. If you  want to  avail AEDL service Please enter your LL number & select RTO code.");	
+				document.getElementById('AEDLLin').style.display = "";
+				return false;
+			} */
+			//***************End******************
+			if(document.getElementById('preMatRenewal').value=="false" && document.getElementsByName("dlc")[i].value=="RENEWAL OF DL")
+			{
+				if(document.getElementsByName("dlc")[i].disabled)
+				{
+					document.getElementsByName("dlc")[i].disabled=false;
+					check++;
+				}
+			}
+			//if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+			if(document.getElementById('COAEnable').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+			{
+				if(document.getElementsByName("dlc")[i].disabled)
+				{
+					document.getElementsByName("dlc")[i].disabled=false;
+					check++;
+				}
+			}
+			if(document.getElementsByName("dlc")[i].value=="CANCELLATION OF NOC")
+			{
+				if(document.getElementsByName("dlc")[i].disabled)
+				{
+					document.getElementsByName("dlc")[i].disabled=false;
+					check++;
+				}
+			}
+			if(document.getElementsByName("dlc")[i].value=="ISSUE OF PSV BADGE TO A DRIVER")
+			{
+				if(document.getElementsByName("dlc")[i].disabled)
+				{
+					document.getElementsByName("dlc")[i].disabled=false;
+					check++;
+				}
+			}
+			if(document.getElementById('surrenderOriginalDlAtdispatch').value=="true" && document.getElementById('surrOrgDL').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL"){
+				if(document.getElementsByName("dlc")[i].disabled)
+				{
+					document.getElementsByName("dlc")[i].disabled=false;
+					check++;
+				}
+			}
+			if(document.getElementById('capturePhoroAndSigMand').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF PHOTO AND SIGNATURE IN DL"){
+				if(document.getElementsByName("dlc")[i].disabled)
+				{
+					document.getElementsByName("dlc")[i].disabled=false;
+					check++;
+				}
+			}
+			if(document.getElementById('dupDLSerMand').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL"){
+				if(document.getElementsByName("dlc")[i].disabled)
+				{
+					document.getElementsByName("dlc")[i].disabled=false;
+					check++;
+				}
+			}
+			if(document.getElementById('eKYCAllowApplnameModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL"){
+				if(document.getElementsByName("dlc")[i].disabled)
+				{
+					document.getElementsByName("dlc")[i].disabled=false;
+					check++;
+				}
+			}
+			if(document.getElementById('eKYCAllowDobModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL"){
+				if(document.getElementsByName("dlc")[i].disabled)
+				{
+					document.getElementsByName("dlc")[i].disabled=false;
+					check++;
+				}
+			}
+			/* if(document.getElementById('eKYCDLSerReq').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL"){
+				alert("To avail the contactless service for CHANGE OF NAME IN DL, the new name must be same as per Aadhaar Card, otherwise need to visit RTO office.");
+			} */
+		}
+		for(var j=0; j<dlsize; j++)
+		{
+			if(document.getElementsByName("dlc")[j].checked){
+				check++;
+			}
+		}
+		if(check==0){
+			MessageHandler('UC96-E03');
+            var v=document.getElementById('s4msg').value;
+			alert(v);
+			//alert('Please Select at least one DL Service');
+			return false;
+		}
+		return true;
+	}
+	</script>
+		
+	<input type="hidden" name="reset1" value="" id="trsaction_reset1" autocomplete="off">
+	<input type="hidden" name="s4msg" value="" id="s4msg" autocomplete="off">
+	<br>
+</div>
+</div>
+
+
+
+
+<!-- Added By venkatesh On 18-04-2016  -->
+
+<!-- END  -->
+
+<!-- Added By venkatesh On 19-07-2016  -->
+
+
+	<script type="text/javascript">
+	   // alert("PSV NOT ADDED");
+	    var dlsize=document.getElementsByName("dlc").length;
+		for(var i=0; i<dlsize; i++)
+		{
+			if(document.getElementsByName("dlc")[i].value=="ISSUE OF PSV BADGE TO A DRIVER")
+			{
+				document.getElementsByName("dlc")[i].disabled=false;
+			}
+		} 
+	</script>
+
+<!-- Added By venkatesh On 19-07-2016  -->
+
+
+<!-- Added By venkatesh On 23-02-2016  -->
+
+	<script type="text/javascript">
+		$("#AEDLLin").hide();
+		$( "input[value='ADDITIONAL ENDORSEMENT TO DL']" ).click(function() {
+			if($( "input[value='ADDITIONAL ENDORSEMENT TO DL']" ).is(":checked")){
+				alert("As per our records you do not have any valid LL’s. If you  want to  avail AEDL service Please select State , RTO and enter your LL number .");
+				$("#AEDLLin").show();
+			}else
+				$("#AEDLLin").hide();
+		});
+	</script>
+
+
+<!-- Added By venkatesh On 23-02-2016  -->
+
+<!-- Added By venkatesh On 23-06-2016  -->
+<script type="text/javascript">
+var AEDLNotAl=document.getElementById('AEDLNotAllowd').value;
+//alert("AEDLNotAl---"+AEDLNotAl);
+if(AEDLNotAl=="AEDLNotAllowd"){
+	if($( "input[value='ADDITIONAL ENDORSEMENT TO DL']" ).is(":checked")){
+		//alert("ADDITIONAL ENDORSEMENT TO DL Checked");
+		var checksSize = document.getElementsByName("dlc").length;
+		//alert("checksSize--"+checksSize);
+		for(var i=0; i<checksSize; i++)
+		{ 
+			//alert("checksSize--"+checksSize);
+			if(document.getElementById('AEDLNotAllowd').value=="AEDLNotAllowd" && document.getElementsByName("dlc")[i].value=="ADDITIONAL ENDORSEMENT TO DL")
+			{
+				//alert("--"+document.getElementsByName("dlc")[i].value);
+				if(document.getElementsByName("dlc")[i].checked)
+				{
+				//	alert("-In IF-"+document.getElementsByName("dlc")[i].value);
+					document.getElementsByName("dlc")[i].checked=false;
+				}
+			}
+		}
+	}else{
+		//alert("ADDITIONAL ENDORSEMENT TO DL Not Checked");
+	}
+}
+</script>
+<!-- Added By venkatesh On 23-06-2016  -->
+
+<!-- Added By venkatesh On 23-03-2016 
+When an expired DL  is coming for DL services, Then Automatically  "DL Renewal or   DL Renewal with Retest" is getting enabled, 
+when " DL Extract " is selected prevision to remove "DL Renewal or   DL Renewal with Retest" has to be given  -->
+	<script type="text/javascript">
+		$( "input[value='DL EXTRACT']" ).click(function() {
+			//alert("checked");
+			if($( "input[value='DL EXTRACT']" ).is(":checked")){
+				var dlsize=document.getElementsByName("dlc").length;
+				var check=0;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementById('preMatRenewal').value=="false" && (document.getElementsByName("dlc")[i].value=="RENEWAL OF DL" || document.getElementsByName("dlc")[i].value=="DL RENEWAL WITH RE-TEST"))
+					{
+						if(document.getElementsByName("dlc")[i].disabled)
+						{
+							document.getElementsByName("dlc")[i].disabled=false;
+							check++;
+						}
+					}
+				}
+				var check=0;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					{
+						if(document.getElementsByName("dlc")[i].disabled)
+						{
+							document.getElementsByName("dlc")[i].disabled=false;
+							check++;
+						}
+					}
+				}
+				var check=0;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementsByName("dlc")[i].value=="ISSUE OF ENDORSEMENTFREE DL")
+					{
+						if(document.getElementsByName("dlc")[i].disabled)
+						{
+							document.getElementsByName("dlc")[i].disabled=false;
+							check++;
+						}
+					}
+				}
+				var check=0;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL")
+					{
+						if(document.getElementsByName("dlc")[i].disabled)
+						{
+							document.getElementsByName("dlc")[i].disabled=false;
+							check++;
+						}
+					}
+				}
+			}else{
+				var checksSize = document.getElementsByName("dlc").length;
+				for(var i=0; i<checksSize; i++)
+				{
+					if(document.getElementById('preMatRenewal').value=="false" && (document.getElementsByName("dlc")[i].value=="RENEWAL OF DL" || document.getElementsByName("dlc")[i].value=="DL RENEWAL WITH RE-TEST"))
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					//added on 02-04-2018
+					if(document.getElementsByName("dlc")[i].value=="ISSUE OF ENDORSEMENTFREE DL")
+					{
+						if(!document.getElementsByName("dlc")[i].checked)
+						{
+							//alert("select & hide");
+							document.getElementsByName("dlc")[i].checked=true;
+							//document.getElementsByName("dlc")[i].disabled="true";
+						}
+					}
+					//if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					if(document.getElementById('COAEnable').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						if(document.getElementById('COAMand').value=="true"){
+							document.getElementsByName("dlc")[i].disabled="true";
+						}
+					}
+					if(document.getElementById('surrenderOriginalDlAtdispatch').value=="true" && document.getElementById('surrOrgDL').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL"){
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('capturePhoroAndSigMand').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF PHOTO AND SIGNATURE IN DL"){
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('dupDLSerMand').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL"){
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCAllowApplnameModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCAllowDobModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCSelCONSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+					}
+					if(document.getElementById('eKYCSelCODOBSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+					}
+				}
+			}
+		});
+	</script>
+	<script type="text/javascript">
+		$( "input[value='DL EXTRACT']" ).click(function() {
+			if(!$( "input[value='DL EXTRACT']" ).is(":checked")){
+				//alert("un checked");
+				var checksSize = document.getElementsByName("dlc").length;
+				for(var i=0; i<checksSize; i++)
+				{
+					if(document.getElementById('preMatRenewal').value=="false" && (document.getElementsByName("dlc")[i].value=="RENEWAL OF DL" || document.getElementsByName("dlc")[i].value=="DL RENEWAL WITH RE-TEST"))
+					{
+						//alert("select & hide ");
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					//added on 02-04-2018
+					if(document.getElementsByName("dlc")[i].value=="ISSUE OF ENDORSEMENTFREE DL")
+					{
+						//alert("select & hide111111111111 ");
+						document.getElementsByName("dlc")[i].checked=true;
+						//document.getElementsByName("dlc")[i].disabled="true";
+					}
+					//if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					if(document.getElementById('COAEnable').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						if(document.getElementById('COAMand').value=="true"){
+							document.getElementsByName("dlc")[i].disabled="true";
+						}
+					}
+					if(document.getElementById('surrenderOriginalDlAtdispatch').value=="true" && document.getElementById('surrOrgDL').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL"){
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('capturePhoroAndSigMand').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF PHOTO AND SIGNATURE IN DL"){
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('dupDLSerMand').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL"){
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCAllowApplnameModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCAllowDobModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCSelCONSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+					}
+					if(document.getElementById('eKYCSelCODOBSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+					}
+				}
+			}
+		});
+	</script>
+<!-- Added By venkatesh On 23-03-2016  -->
+<!-- Added By venkatesh On 06-OCt-2016 
+When an expired DL  is coming for DL services, Then Automatically  "DL Renewal or   DL Renewal with Retest" is getting enabled, 
+when " ISSUE OF NOC " is selected prevision to remove "DL Renewal or   DL Renewal with Retest" has to be given  -->
+	<script type="text/javascript">
+		$( "input[value='ISSUE OF NOC']" ).click(function() {
+			//alert("checked");
+			if($( "input[value='ISSUE OF NOC']" ).is(":checked")){
+				var dlsize=document.getElementsByName("dlc").length;
+				var check=0;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementById('preMatRenewal').value=="false" && (document.getElementsByName("dlc")[i].value=="RENEWAL OF DL" || document.getElementsByName("dlc")[i].value=="DL RENEWAL WITH RE-TEST"))
+					{
+						if(document.getElementsByName("dlc")[i].disabled)
+						{
+							document.getElementsByName("dlc")[i].disabled=false;
+							check++;
+						}
+					}
+				}
+				var check=0;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					{
+						if(document.getElementsByName("dlc")[i].disabled)
+						{
+							document.getElementsByName("dlc")[i].disabled=false;
+							check++;
+						}
+					}
+				}
+				var check=0;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementById('surrenderOriginalDlAtdispatch').value=="true" && document.getElementById('surrOrgDL').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL")
+					{
+						if(document.getElementsByName("dlc")[i].disabled)
+						{
+							document.getElementsByName("dlc")[i].disabled=false;
+							check++;
+						}
+					}
+				}
+				var check=0;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementById('capturePhoroAndSigMand').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF PHOTO AND SIGNATURE IN DL")
+					{
+						if(document.getElementsByName("dlc")[i].disabled)
+						{
+							document.getElementsByName("dlc")[i].disabled=false;
+							check++;
+						}
+					}
+				}
+				var check=0;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementById('dupDLSerMand').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL")
+					{
+						if(document.getElementsByName("dlc")[i].disabled)
+						{
+							document.getElementsByName("dlc")[i].disabled=false;
+							check++;
+						}
+					}
+				}
+			}else{
+				var checksSize = document.getElementsByName("dlc").length;
+				for(var i=0; i<checksSize; i++)
+				{
+					if(document.getElementById('preMatRenewal').value=="false" && (document.getElementsByName("dlc")[i].value=="RENEWAL OF DL" || document.getElementsByName("dlc")[i].value=="DL RENEWAL WITH RE-TEST"))
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					//if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					if(document.getElementById('COAEnable').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						if(document.getElementById('COAMand').value=="true"){
+							document.getElementsByName("dlc")[i].disabled="true";
+						}
+					}
+					if(document.getElementById('surrenderOriginalDlAtdispatch').value=="true" && document.getElementById('surrOrgDL').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('capturePhoroAndSigMand').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF PHOTO AND SIGNATURE IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('dupDLSerMand').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCAllowApplnameModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCAllowDobModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCSelCONSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+					}
+					if(document.getElementById('eKYCSelCODOBSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+					}
+				}
+			}
+		});
+	</script>
+	<script type="text/javascript">
+		$( "input[value='ISSUE OF NOC']" ).click(function() {
+			if(!$( "input[value='ISSUE OF NOC']" ).is(":checked")){
+				//alert("un checked");
+				var checksSize = document.getElementsByName("dlc").length;
+				for(var i=0; i<checksSize; i++)
+				{
+					if(document.getElementById('preMatRenewal').value=="false" && (document.getElementsByName("dlc")[i].value=="RENEWAL OF DL" || document.getElementsByName("dlc")[i].value=="DL RENEWAL WITH RE-TEST"))
+					{
+						//alert("select & hide ");
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					//if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					if(document.getElementById('COAEnable').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						if(document.getElementById('COAMand').value=="true"){
+							document.getElementsByName("dlc")[i].disabled="true";
+						}
+					}
+					if(document.getElementById('surrenderOriginalDlAtdispatch').value=="true" && document.getElementById('surrOrgDL').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('capturePhoroAndSigMand').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF PHOTO AND SIGNATURE IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('dupDLSerMand').value=="true" && document.getElementsByName("dlc")[i].value=="ISSUE OF DUPLICATE DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCAllowApplnameModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCAllowDobModify').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						document.getElementsByName("dlc")[i].disabled="true";
+					}
+					if(document.getElementById('eKYCSelCONSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF NAME IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+					}
+					if(document.getElementById('eKYCSelCODOBSer').value=="true" && document.getElementsByName("dlc")[i].value=="CHANGE OF DATE OF BIRTH IN DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+					}
+				}
+			}
+		});
+	</script>
+<!-- Added By venkatesh On 06-OCT-2016  -->
+	<script type="text/javascript">
+		$( "input[value='ISSUE OF DUPLICATE DL']" ).click(function() {
+			if($( "input[value='ISSUE OF DUPLICATE DL']" ).is(":checked")){
+				$('#duppopup').modal('show');
+			}
+		});
+	</script>		
+<!-- Added By venkatesh On 16-07-2016 
+Select the COV CONVERSION , automatically select the ISSUE OF PSV BADGE TO A DRIVER  -->
+	<script type="text/javascript">
+		$( "input[value='COV CONVERSION']" ).click(function() {
+			//alert("checked");
+			if($( "input[value='COV CONVERSION']" ).is(":checked")){
+				var dlsize=document.getElementsByName("dlc").length;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementsByName("dlc")[i].value=="ISSUE OF PSV BADGE TO A DRIVER")
+					{
+						if(!document.getElementsByName("dlc")[i].checked)
+						{
+							var r = confirm("COV CONVERSION Service is selected. Can you proceed to select the ISSUE OF PSV BADGE TO A DRIVER Service");
+							if (r == true) 
+							{
+								document.getElementsByName("dlc")[i].disabled=false;
+								document.getElementsByName("dlc")[i].checked=true;
+							} 
+						}
+					}
+				}
+			}
+		});
+	</script>
+	<script type="text/javascript">
+		$( "input[value='COV CONVERSION']" ).click(function() {
+			//alert("checked");
+			if(!$( "input[value='COV CONVERSION']" ).is(":checked")){
+				var dlsize=document.getElementsByName("dlc").length;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementsByName("dlc")[i].value=="ISSUE OF PSV BADGE TO A DRIVER")
+					{
+						if(document.getElementsByName("dlc")[i].checked)
+						{
+							document.getElementsByName("dlc")[i].checked=false;
+						}
+					}
+				}
+			}
+		});
+	</script>
+	<script type="text/javascript">
+		var dlsize=document.getElementsByName("dlc").length;
+		for(var i=0; i<dlsize; i++)
+		{
+			if(document.getElementsByName("dlc")[i].value=="CANCELLATION OF NOC")
+			{
+				document.getElementsByName("dlc")[i].checked=true;
+				document.getElementsByName("dlc")[i].disabled="true";
+				var checksSize = document.getElementsByName("dlc").length;
+				for(var i=0; i<checksSize; i++)
+				{	
+					if(document.getElementById('preMatRenewal').value=="false" && document.getElementsByName("dlc")[i].value=="RENEWAL OF DL")
+					{	
+						document.getElementsByName("dlc")[i].disabled=false;
+						{
+							document.getElementsByName("dlc")[i].checked=true;
+							document.getElementsByName("dlc")[i].disabled=false;
+						}
+					}
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript">
+	/* Added By Venkatesh Y on 2-04-2018 */
+		var dlsize=document.getElementsByName("dlc").length;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementsByName("dlc")[i].value=="ISSUE OF ENDORSEMENTFREE DL")
+					{
+						document.getElementsByName("dlc")[i].checked=true;
+						//document.getElementsByName("dlc")[i].disabled="true";
+						var checksSize = document.getElementsByName("dlc").length;
+						for(var i=0; i<checksSize; i++)
+						{	
+							if(document.getElementById('preMatRenewal').value=="false" && document.getElementsByName("dlc")[i].value=="RENEWAL OF DL")
+							{	
+								document.getElementsByName("dlc")[i].disabled=false;
+							
+								if(!document.getElementsByName("dlc")[i].checked)
+								{
+									document.getElementsByName("dlc")[i].checked=true;
+									document.getElementsByName("dlc")[i].disabled=false;
+								}
+							}
+						}
+						/* Added By Venkatesh Y on 10-10-2017 */
+					}
+				}
+	/* End of Adding By Venkatesh Y on 2-04-2018 */
+	</script>
+	<script type="text/javascript">
+		$( "input[value='ISSUE INTERNATIONAL DRIVING PERMIT']" ).click(function() {
+			//alert("checked");
+			if($( "input[value='ISSUE INTERNATIONAL DRIVING PERMIT']" ).is(":checked")){
+				var dlsize=document.getElementsByName("dlc").length;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					{
+						if(document.getElementById('LastSelBothRTOsareNotSame').value=="true")
+						{
+							if(!document.getElementsByName("dlc")[i].checked)
+							{
+								var r = confirm("DL Holder selects ISSUE INTERNATIONAL DRIVING PERMIT Service, DL Holders Last Endorsed RTO and selected RTO both are different. Change Of Address is mandatory.");
+								if (r == true) 
+								{
+									document.getElementsByName("dlc")[i].disabled=true;
+									document.getElementsByName("dlc")[i].checked=true;
+								} 
+							}
+							document.getElementsByName("dlc")[i].disabled=true;
+						}
+					}
+				}
+			}
+			else{
+				var dlsize=document.getElementsByName("dlc").length;
+				for(var i=0; i<dlsize; i++)
+				{
+					if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					{
+						document.getElementsByName("dlc")[i].disabled=false;
+						document.getElementsByName("dlc")[i].checked=false;
+					}
+				} 
+			}
+			/* End of Adding By Venkatesh Y on 16-01-2017 */
+		});
+	</script>
+	<script type="text/javascript">
+		$( "input[value='ISSUE OF NOC']" ).click(function() {
+			if(!$( "input[value='ISSUE INTERNATIONAL DRIVING PERMIT']" ).is(":checked")){
+				//alert("un checked");
+				var checksSize = document.getElementsByName("dlc").length;
+				for(var i=0; i<checksSize; i++)
+				{
+					if(document.getElementsByName("dlc")[i].value=="CHANGE OF ADDRESS IN DL")
+					{
+						document.getElementsByName("dlc")[i].disabled=false;
+						document.getElementsByName("dlc")[i].checked=false;
+					}
+				}
+			}
+		});
+	</script>
+	
+		
+		
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+</form>
+
+
+
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="duppopup" role="dialog" style="z-index:9999;">
+	<div class="modal-dialog modal-lg"><!--  style="max-width: 500px; margin: 30px auto;" -->
+		<div class="modal-content">
+			<div class="modal-header" style="border-bottom: 0; background: royalblue;">
+				<button type="button" class="close" data-dismiss="modal" style="padding: 0.5%; background-color: white; opacity: 1;">x</button>
+				<h4 class="modal-title" style="color: white; text-align: center;">ISSUE OF DUPLICATE DL Service</h4>
+			</div>
+			<div class="modal-body finalAlertBody">
+				<div class="row">
+					<div class="col-md-12 top-space">
+					<!-- Applicant is advised to download Digital / Virtual Driving License from mParivahan mobile app (<b style="color: blue;" >https://play.google.com/store/apps/details?id=com.nic.mparivahan&hl=en_IN&gl=US</b>), which is legally valid as per Central Motor Vehicle Rule. There is no need to carry any physical document if mParivahan or Digilocker based virtual RC is carried in the mobile.
+					If however, the applicant still wants a physical document, then may proceed for Duplicate DL. -->
+					Applicant is advised to download Digital / Virtual Driving License from mParivahan mobile 
+					app (<b style="color: blue;"><a href="https://play.google.com/store/apps/details?id=com.nic.mparivahan&amp;hl=en_IN&amp;gl=US" target="_blank">https://play.google.com/store/apps/details?id=com.nic.mparivahan&amp;hl=en_IN&amp;gl=US</a></b>), 
+					which is legally valid as per Central Motor Vehicle Rule. There is no need to carry any physical document if mParivahan or Digilocker based virtual Driving Licence is carried in the mobile. 
+					If however, the applicant still wants a physical document, then may proceed for Duplicate Driving Licence.						
+					</div>
+					<div class="col-md-12 top-space center">
+						<input type="button" data-dismiss="modal" value="close" class="btn" style="float: right;" autocomplete="off">
+					</div>												
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+			</div>
+<!-- 			<div class="footer"> -->
+				
+
+
+
+<link rel="stylesheet" href="https://vani-hyd.nic.in/rtoBot/JSandCSSchatbot.css"> 
+
+
+<style>
+.fa
+{
+    font-size: 18px !important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+/*     position: absolute; */
+    top: 7px;
+}
+/* .list-unstyled > li
+{
+padding-left: 50px;
+} */
+.ip_address_text
+{
+color: #fff; 
+padding: 0px 0px 7px 10px; 
+font-style: italic; 
+font-size: 12px;
+}
+.footer_main {
+	background-color: #1ca6ef;
+	padding: 5px 0px 0px 0px;
+}
+
+.footer_main ul li a {
+	color: #141111;
+	font-size: 14px;
+	letter-spacing: 0.3px;
+	line-height: 25px;
+}
+
+.designed_by {
+	color: #141111;
+	font-size: 10.5px;
+	letter-spacing: 0.2px;
+	font-style: italic;
+}
+
+.containermsg_vani p {
+	text-align: initial;
+}
+
+.footer_chat_box {
+	text-align: center;
+}
+
+.left {
+	left: 0;
+	background-color: inherit !important;
+}
+
+.right {
+	right: 0;
+	background-color: inherit !important;
+}
+
+.chatbutton {
+	width: 100px;
+	height: 100px;
+}
+.change_state
+{
+color:#141111 !important; 
+letter-spacing: 0.2px; 
+font-size: 13px;
+text-decoration: none;
+}
+#pdfModal {
+}
+.ekycfooter-content a
+{
+color: darkblue !important;
+font-weight: bold !important;
+}
+
+@media ( min-width : 600px) {
+	/* For tablets & desktop: */
+	.chatbutton {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.footer_main p {
+		padding: 0px 0px 0px 0px;
+	}
+	.footer_main {
+		text-align: center;
+	}
+	.footer_chat_box {
+		text-align: center;
+	}
+	.ip_address_text
+	{
+	padding: 10px 0px 0px 0px; 
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.footer_main {
+		text-align: center;
+	}
+	.footer_chat_box {
+		text-align: center;
+	}
+}
+
+.popupclose {
+	background-color: white !important;
+	color: #695f5f;
+	opacity: 1;
+	border-radius: 25px;
+	width: 26px;
+	height: 25px;
+	text-align: center;
+	box-shadow: 1px 1px 2px rgb(0 0 0);
+	-moz-box-shadow: 1px 1px 2px rgb(0 0 0);
+	-webkit-box-shadow: 1px 1px 2px rgb(0 0 0);
+	-o-box-shadow: 1px 1px 2px rgb(0 0 0);
+}
+
+.popupli {
+	padding: 5px 6px;
+    background-color: #3ba8c4;
+    margin-bottom: 1% !important;
+    font-size: 14.5px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 50%);
+    -moz-box-shadow: 0 3px 5px rgb(0 0 0/ 50%);
+    -webkit-box-shadow: 0 3px 5px rgb(0 0 0 / 50%);
+    -o-box-shadow: 0 3px 5px rgb(0 0 0/ 50%);
+    border: 1px solid rgba(0, 0, 0, 0);
+/*     cursor: pointer; */
+	background-color: #0035c9;
+    font-size: 14.5px;
+    letter-spacing: 0.05em;
+    font-family: system-ui;
+}
+
+.popupli:hover {
+	box-shadow: 0 0px 0px rgb(0, 0, 0);
+	-moz-box-shadow: 0 0px 0px rgb(0, 0, 0);
+	-webkit-box-shadow: 0 0px 0px rgb(0, 0, 0);
+	-o-box-shadow: 0 0px 0px rgb(0, 0, 0);
+}
+
+.popup-servnames:hover, .popupfilepath:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.popupspan {
+	font-size: 17px;
+	padding-right: 9px;
+	color: #ffffff;
+}
+
+.modalpopup-header {
+	padding: 10px;
+	border-bottom: 0;
+	background: #074e81;
+	font-family:'Source Code Pro', sans-serif;
+	box-shadow: 0 3px 3px rgb(0 0 0/ 50%);
+	-moz-box-shadow: 0 3px 3px rgb(0 0 0/ 50%);
+	-webkit-box-shadow: 0 3px 3px rgb(0 0 0/ 50%);
+	-o-box-shadow: 0 3px 3px rgb(0 0 0/ 50%);
+}
+
+#contactless_statepopup_title {
+	margin: 0%;
+	color: white;
+	text-align: center;
+	font: 20px 'MuseoSlab500Regular', arial, helvetica, sans-serif;
+	letter-spacing: 0.03em;
+	text-shadow: 0 -1px 1px rgb(0 0 0/ 50%);
+}
+
+.modalpopup-body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	min-height: 200px;
+	max-height: 600px;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.modalpopup-body {
+		max-height: 400px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.modalpopup-body {
+		max-height: 500px;
+	}
+	.parivahan_footerlink,
+	.change_state
+	{
+	/* margin-left: -52px; */
+	}
+}
+
+.ekycheader {
+	font-family: system-ui; 
+	letter-spacing: 0.02em; 
+	font-size: 13px; 
+	/* font-weight: bold; */
+	line-height: 1.8em;
+	text-align: justify;
+}
+@media only screen and (min-width: 1200px)
+{
+.parivahan_footerlink, .change_state {
+   /*  margin-left: -39px; */
+}
+}
+
+.popup-servnames {
+	color: #fff;
+    margin-right: 2%;
+}
+
+.popupfilepath {
+	/* font-size: 20px; */
+    cursor: pointer;
+    color: #fff;
+}
+</style>
+
+
+
+<!------------------footer------------------>
+<section class="footer_main" style="clear:both;">
+<div class="container-fluid">
+<div class="row" style="clear:both;">
+<div class="col-md-11 col-sm-10" style="">
+<div class="row">
+				<div class="col-md-4 col-sm-4" style="">
+					
+					<div class="col-md-7">
+					<p class="designed_by">Designed, developed and hosted by <b style="color: #0072ff;">S16</b> </p>
+					<div class="nic_logo">
+						<img src="https://sarathi.parivahan.gov.in/sarathiservice/images/footer/logo.png" alt="NIC" style="cursor: pointer;" onclick="javascript:w=window.open('http://www.nic.in','mywin');">
+					</div>
+					</div>
+					<div class="col-md-5">
+					
+
+					
+					<div class="gov_logo">
+						<img src="https://sarathi.parivahan.gov.in/sarathiservice/images/footer/digital_logo_main.png" alt="Gov" border="0" style="cursor: pointer;" onclick="javascript:w=window.open('https://www.digitalindia.gov.in','mywin');">
+					</div>
+					
+									
+					</div>
+					
+				</div>
+
+				
+				<div class="col-md-2 col-sm-2">
+					<ul class="list-unstyled">
+				        <li><a href="https://sarathi.parivahan.gov.in/SarathiReport">Dashboard</a></li>
+						<li><a href="usereKYCauth.do">Doctor Registration</a></li>
+						<li><a href="doctorsReport.do">Find Doctor</a></li> 
+						<li><a href="https://sarathi.parivahan.gov.in/sarathi/useractivation.do">Activate User Account</a></li>										
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<ul class="list-unstyled">
+						<li><a id="faq" href="faquest.do?helpType=UM">User Manual</a></li>
+						<li><a href="faquest.do?helpType=AR">Acts &amp; Rules</a></li>
+						<!-- <li><a href="videoAndAudio.do">Videos/Audios</a></li> -->
+						<li><a href="scReader.do">Screen Reader</a></li>
+						<!-- <li><a href="sitemap.do">Sitemap</a></li> -->				
+					</ul>
+				</div>
+        		<div class="col-md-2 col-sm-2">
+					<ul class="list-unstyled">
+						<li><a href="ContactDet.do">Contact Us</a></li>							
+						<li><a href="feedbackMobAuth.do" style="">Feedback / Complaints</a></li>
+						 <li><a href="faquest.do?helpType=FA">FAQs</a></li>
+						<!-- <li><a href="#" onclick="return popup()" class="modalpopup-body " style="margin-left: -10px;">Contactless Services</a></li> -->	
+						  				
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<ul class="list-unstyled">
+					    <li><a href="stateSelection.do" style="" class="change_state">Change State</a></li>
+					    <li><a href="https://parivahan.gov.in" class="parivahan_footerlink">Parivahan</a></li>	
+					    <li><a href="sitemap.do">Sitemap</a></li>	
+					   <!--  <li><a href="faquest.do?helpType=FA" style="margin-left: -39px;">FAQs</a></li> -->					
+					</ul>
+				</div>
+				
+
+			</div>
+
+	</div>
+	<div class="col-md-1 col-sm-2 col-xs-12 mb_center footer_chat_box" style="cursor:pointer;">
+		
+		
+	<div class="container">
+		<div class="row">
+			<div id="log" style="visibility: hidden; display:none;"></div>
+			<div id="logToSave" style="visibility: hidden; display:none;"></div>
+			<div class="modal fade" data-backdrop="static" data-keyboard="false" id="pdfModal" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">×</button>
+							<h4 class="modal-title"></h4>
+						</div>
+						<div id="ulink"></div>
+						<iframe id="ifz" style="width:895px;height:600px;" src=""></iframe>
+					</div>
+				</div>
+			</div>	
+			<div id="Smallchat">
+				<div class="Layout Layout-open Layout-expand Layout-right" style="background-color: #3F51B5;color: rgb(255, 255, 255);opacity: 5;border-radius: 10px;transition: all 1s ease-in-out;">
+					<div class="Messenger_messenger">
+						<div class="Messenger_header" style="background-color: #207ad0; color: rgb(255, 255, 255);">
+							<img class="img-responsive headimg" src="https://vani-hyd.nic.in/rtoBot/imagesani-gif.gif" alt="Vani" style="width: 35px; height: 35px;">
+							<h4 class="Messenger_prompt">VANI - Virtual Assistance by NIC</h4>
+							<span class="chat_minimize_icon">
+								<i class="fa fa-minus" aria-hidden="true"></i>
+							</span>
+							<span class="chat_close_icon">
+								<i class="fa fa-close" aria-hidden="true"></i>
+							</span>
+						</div>
+				
+						<div class="Messenger_content">
+							<div class="Messages">
+								<div class="Messages_list">
+								</div>
+								<div class="modal fade modal-allow-interact" id="myModal" role="dialog" data-easein="slideUpBigIn" data-backdrop="false">
+									<div class="modal-dialog modal-sm" style="margin: 70px auto;">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close rotate" data-dismiss="modal">×</button>
+												<h4 class="modal-title">Please Select Language</h4>
+											</div>
+											<div class="modal-body">
+												<div class="radio">
+													<label><input type="radio" name="optradio" checked="" autocomplete="off">English</label>
+												</div>
+												<div class="radio">
+													<label><input type="radio" name="optradio" autocomplete="off">Hindi</label>
+												</div>
+												<div class="radio disabled">
+													<label><input type="radio" name="optradio" autocomplete="off">Gujarati</label>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btnbtn-default rotate" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="typing" style="font-weight: bold;">
+								</div>
+							</div>
+							<div class="Input Input-blank" style="display: flex;">
+								<div style="flex: 90%;">
+                                        <label for="InputEnter">How may I help you?</label>
+                                        <input id="InputEnter" class="Input_field" placeholder="How may I help you?" data-html="true" maxlength="250" style="height: 50px; padding-left: 20px;" autocomplete="off">
+
+								</div>
+								<div style="flex: 10%;">
+									<button class="Input_buttonInput_button-send" id="buttonenter">
+										<div class="Icon" style="width: 18px; height: 18px;">
+											<svg width="57px" height="54px" viewBox="1496 193 57 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 18px; height: 18px;">
+												<g id="Group-9-Copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1523.000000, 220.000000) rotate(-270.000000) translate(-1523.000000, -220.000000) translate(1499.000000, 193.000000)">
+													<path d="M5.42994667,44.5306122 L16.5955554,44.5306122 L21.049938,20.423658 C21.6518463,17.1661523 26.3121212,17.1441362 26.9447801,20.3958097 L31.6405465,44.5306122 L42.5313185,44.5306122 L23.9806326,7.0871633 L5.42994667,44.5306122 Z M22.0420732,48.0757124 C21.779222,49.4982538 20.5386331,50.5306122 19.0920112,50.5306122 L1.59009899,50.5306122 C-1.20169244,50.5306122 -2.87079654,47.7697069 -1.64625638,45.2980459 L20.8461928,-0.101616237 C22.1967178,-2.8275701 25.7710778,-2.81438868 27.1150723,-0.101616237 L49.6075215,45.2980459 C50.8414042,47.7885641 49.1422456,50.5306122 46.3613062,50.5306122 L29.1679835,50.5306122 C27.7320366,50.5306122 26.4974445,49.5130766 26.2232033,48.1035608 L24.0760553,37.0678766 L22.0420732,48.0757124 Z" id="sendicon" fill="#96AAB4" fill-rule="nonzero"></path>
+												</g>
+											</svg>
+										</div>
+										Send Message
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<!--===============CHAT ON BUTTON STRART===============-->
+				<div class="chat_on bubbly-button">
+					<span class="chat_on_icon">
+						<img class="img-responsive" src="https://vani-hyd.nic.in/rtoBot/imagesani-gif.gif" alt="Vani" style="width: 100px; height: 100px;">
+					</span>
+				</div> 
+				<!--===============CHAT ON BUTTON END===============-->
+			</div>
+		</div>
+	</div>
+		
+		
+	</div>
+</div>
+</div>
+</section>
+
+	<div class="modal fade" data-backdrop="static" data-keyboard="false" id="contactless_statepopup" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<!--  style="max-width: 500px; margin: 30px auto;" -->
+			<div class="modal-content">
+				<div class="modal-header modalpopup-header">
+					<button type="button" class="close popupclose" data-dismiss="modal" style="color: #2199e0;">x</button>
+					<h4 class="" id="contactless_statepopup_title">Faceless
+						Services</h4>
+				</div>
+				<div class="modal-body finalAlertBody modalpopup-body">
+					<div class="row">
+						<div class="col-md-12 top-space" id="contactless_services_list_"></div>
+						<div class="re-issue" style="background-color: #0035c9;font-size: 14.5px;letter-spacing: 0.05em; font-family: system-ui;"></div>
+					</div>
+					<div class="col-md-12 top-space center">
+						<input type="button" data-dismiss="modal" value="Skip" class="btn" style="float: right; background: #2199e0;" autocomplete="off">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+<script src="https://vani-hyd.nic.in/rtoBot/JSandCSSchatbot.js"></script>
+<script src="https://vani-hyd.nic.in/rtoBot/JSandCSSelocity.min.js"></script>
+<script src="https://vani-hyd.nic.in/rtoBot/JSandCSSelocity.ui.min.js"></script> 
+
+
+<script>
+	$(document).ready(function() {
+	    $( document ).on( 'focus', ':input', function() {
+	        $( this ).attr( 'autocomplete', 'off' );
+	    });
+	});
+	$('input').attr('autocomplete','off');
+</script>
+
+
+
+
+		</div>
+	</div>
+	
+	
+	  
+     <script type="text/javascript">
+	  $('#Sarathi_Lang_ID').hide(); //to hide
+	  </script>
+    	 
+       
+    
+	
+
+
+
+
+	
+
+
+
+
+<script>
+$(document).ready(function() {
+	
+	var loc = "?null";
+	console.log("loc:"+loc);
+	if( loc.split("=")[0] == "?request_locale"){
+		console.log("new myloca:"+loc);
+		$('#selectLang').val(loc);
+		sessionStorage.setItem("SelItem", loc);
+	}else{
+		
+		var selItem = sessionStorage.getItem("SelItem"); 
+		console.log("use sessionstorage:"+selItem)
+	    $('#selectLang').val(selItem);
+	}
+		/* var selItem = sessionStorage.getItem("SelItem");  
+    $('#selectLang').val(selItem);
+    $('#selectLang').change(function() { 
+        var selVal = $(this).val();
+        sessionStorage.setItem("SelItem", selVal);
+    }); */
+    
+      // bind change event to select
+      /* $('#selectLang').change(function () {
+          var url = $(this).val(); 
+          	alert(url);// get selected value
+         // $('#langSelection1').val($(this).val());
+          $("#selectLang").val($(this).val()).trigger("chosen:updated");
+      }); */
+	/* window.onload = function() {
+	    var selItem = sessionStorage.getItem("SelItem");  
+	    $('#selectLang').val(selItem);
+	    }
+	    $('#selectLang').change(function() { 
+	        var selVal = $(this).val();
+	        sessionStorage.setItem("SelItem", selVal);
+	    }); */
+    });
+</script>
+</body><!-- Only for public, reset state code if not available. Redirecting to state selection if completely not available. --></html>
