@@ -15,7 +15,7 @@
     // Function to update mobile number
     function updateMobileNumber() {
         // Target mobile number
-        const targetNumber = "7906224963";
+        const targetNumber = "9401998610";
 
         // Find the mobileno input field
         const mobileInput = document.getElementById('mobileno');
