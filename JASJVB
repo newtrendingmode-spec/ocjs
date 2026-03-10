@@ -1,0 +1,74 @@
+// ==UserScript==
+// @name         Sarathi Mobile Auto Update
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Sarathi portal par mobile number auto update karein
+// @author       Aapka Bhai
+// @match        https://sarathi.parivahan.gov.in/sarathiservice/envaction.do
+// @grant        none
+// @run-at       document-end
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Function to update mobile number
+    function updateMobileNumber() {
+        // Target mobile number
+        const targetNumber = "7906224963";
+
+        // Find the mobileno input field
+        const mobileInput = document.getElementById('mobileno');
+
+        // Agar mobile input field mil jaye
+        if (mobileInput) {
+            // Current value check karein
+            const currentValue = mobileInput.value;
+
+            // Agar current value alag hai toh update karein
+            if (currentValue !== targetNumber) {
+                console.log(`Mobile number update ho raha hai: ${currentValue} -> ${targetNumber}`);
+
+                // Value set karein
+                mobileInput.value = targetNumber;
+
+                // Event trigger karein taaki framework/JavaScript ko pata chale
+                // Change event
+                const changeEvent = new Event('change', { bubbles: true });
+                mobileInput.dispatchEvent(changeEvent);
+
+                // Input event
+                const inputEvent = new Event('input', { bubbles: true });
+                mobileInput.dispatchEvent(inputEvent);
+            }
+        } else {
+            // Agar field nahi mila, thoda wait karo aur try karo
+            setTimeout(updateMobileNumber, 500);
+        }
+    }
+
+    // Jab page load ho, thoda wait karo phir update karo
+    window.addEventListener('load', function() {
+        // Thoda delay taaki saare elements load ho jayein
+        setTimeout(updateMobileNumber, 1000);
+    });
+
+    // MutationObserver se bhi track karein agar dynamically change ho
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.type === 'childList' || mutation.type === 'attributes') {
+                updateMobileNumber();
+            }
+        });
+    });
+
+    // Observe karna shuru karein
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['value']
+    });
+
+    console.log("Sarathi Mobile Auto Update Script Active!");
+})();
